@@ -2,7 +2,7 @@ import sys, os
 import config as cf
 import argparse
 import commands, time
-srcPath = '/home/sjpyo/new/lncRNA_annotation_pipeline/src/'
+srcPath = '/path/to/lncRNA_annotation_pipeline/src/'
 def run_rpds(inputdir , specie, stranded, jobN):
 	rpdsPath = srcPath + 'run_rpds_v3.py'
 	runRPDs = 'python '+rpdsPath+' '+inputdir+' '+specie+' '+stranded+' '+inputdir+' biglab '+jobN
